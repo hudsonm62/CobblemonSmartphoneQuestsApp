@@ -1,0 +1,42 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.3,)"
+issueTrackerURL = "https://github.com/hudsonm62/CobblemonSmartphoneQuestsApp/issues"
+license = "Apache-2.0"
+
+[[mods]]
+modId = "cobblemonsmartphonequestsapp"
+version = "${version}"
+displayName = "Cobblemon Smartphone: Odyssey Quests App"
+authors = "Hudson M."
+description = '''
+Adds a "Open Quests" App to Cobblemon Smartphone to open the Heracles/Odyssey Quests UI 
+'''
+logoFile = "icon.png"
+
+[[dependencies.cobblemonsmartphonequestsapp]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cobblemonsmartphonequestsapp]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cobblemonsmartphonequestsapp]]
+modId = "cobblemon_smartphone"
+type = "required"
+versionRange = "[1.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.cobblemonsmartphonequestsapp]]
+modId = "heracles"
+type = "required"
+versionRange = "[2.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

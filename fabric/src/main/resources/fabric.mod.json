@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "cobblemonsmartphonequestsapp",
+    "version": "${version}",
+    "name": "Odyssey Quests App",
+    "description": "Adds a \"Open Quests\" App to Cobblemon Smartphone to open the Heracles/Odyssey Quests UI",
+    "authors": ["Hudson M."],
+    "contact": {
+        "homepage": "https://modrinth.com/project/8q4HFegr",
+        "sources": "https://github.com/hudsonm62/CobblemonSmartphoneQuestsApp",
+        "issues": "https://github.com/hudsonm62/CobblemonSmartphoneQuestsApp/issues"
+    },
+    "license": "Apache-2.0",
+    "icon": "icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.ziroau.cobblemonsmartphonequestsapp.fabric.client.SmartphoneQuestsAppFabricClient"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.0",
+        "minecraft": "1.21.1",
+        "java": ">=21",
+        "fabric-api": "*",
+        "heracles": ">=2.0.0",
+        "cobblemon_smartphone": "*"
+    },
+    "suggests": {
+        "cobblequestbridge": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "parent": "cobblemon_smartphone"
+        }
+    }
+}
